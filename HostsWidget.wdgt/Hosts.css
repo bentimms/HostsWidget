@@ -1,0 +1,241 @@
+/* Hosts Widget : Manipulates your /etc/hosts file for development purposes. 
+    
+    Copyright: Benjamin Timms (ben.timms@gmail.com)
+    March 2008
+
+    DISCLAIMER: This computer program is supplied "AS IS".
+    The Author disclaims all warranties, expressed or implied, including,
+    without limitation, the warranties of merchantability and of fitness
+    for  any purpose.  The Author assumes no liability for direct, indirect,
+    incidental, special, exemplary, or consequential damages, which may
+    result from the use of the computer program, even if advised of the
+    possibility of such damage.  There is no warranty against interference
+    with your enjoyment of the computer program or against infringement.
+    There is no warranty that my efforts or the computer program will
+    fulfill any of your particular purposes or needs.  This computer
+    program is provided with all faults, and the entire risk of satisfactory
+    quality, performance, accuracy, and effort is with the user.
+
+    LICENSE: Permission is hereby irrevocably granted to everyone to use,
+    copy, modify, and distribute this computer program, or portions hereof,
+    purpose, without payment of any fee, subject to the following
+    restrictions:
+
+    1. The origin of this binary or source code must not be misrepresented.
+
+    2. Altered versions must be plainly marked as such and must not be
+    misrepresented as being the original binary or source.
+
+    3. The Copyright notice, disclaimer, and license may not be removed
+    or altered from any source, binary, or altered source distribution.
+*/
+
+body {
+	margin: 0;
+}
+
+.hostsContainer
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -180px;
+    margin-top: -85px;
+    width: 360px;
+    height: 180px;
+    overflow: auto;
+    border: 1px solid #bbb;
+    background-color: #fff;
+}
+.hostsTable td#checkBoxCell
+{
+    width: 18px;
+}
+.hostsTable td#ipAddrCell
+{
+    width: 185px;
+}
+.hostsTable td#hostnameCell
+{
+    width: 185px;
+}
+.hostsTable td.hostsTableNew
+{
+    text-align:center;
+}
+
+
+#disabledHostText
+{
+    color: #aaa;
+}
+
+.hostField
+{
+    width: 170px;
+}
+.hostFieldWarn
+{
+    width: 170px;
+    background-color: #faa;
+}
+
+.hostsTable input
+{
+    font-size: 7pt;
+}
+
+.hostsTable
+{
+    width: 100%;
+    font-size: 8pt;
+    font-family: "Helvetica", "Verdana", "Arial";
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+.hostsTableAlt
+{
+    background-color: #eee;
+}
+
+.hostsTableNew
+{
+    background-color: #bbf;
+}
+
+
+.hostsTable td
+{
+    border: 1px solid #ddd;
+    padding: 3px 3px 3px 3px;
+}
+
+#loadButton
+{
+	position: absolute;
+	top: 341px;
+	left: 30px;
+}
+
+#hostsText
+{
+	position: absolute;
+	top: 101px;
+	left: 30px;
+}
+
+.helloText {
+	font: 24px "Lucida Grande";
+	font-weight: bold;
+	color: black;
+	position: absolute;
+	top: 41px;
+	left: 30px;
+}
+
+#activateButton
+{
+	position: absolute;
+	left: 272px;
+	top: 263px;
+}
+#eyeButton
+{
+	position: absolute;
+	left: 352px;
+	top: 208px;
+}
+
+#passwordField
+{
+	position: absolute;
+	left: 110px;
+	top: 173px;
+}
+
+#passwordInfoField
+{
+	position: absolute;
+	left: 215px;
+	top: 178px;
+    font-weight: bold;
+    color: #4f4;
+    font-family: Helvetica, Arial;
+    font-size: 8pt;
+}
+
+#passwordWarningField
+{
+	position: absolute;
+	left: 215px;
+	top: 178px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    font-size: 8pt;
+    color: #a00;
+}
+
+#frontSpinner
+{
+	position: absolute;
+	left: 40px;
+	top: 207px;
+    display: none;
+}
+
+#backSpinner
+{
+	position: absolute;
+	left: 215px;
+	top: 178px;
+    display: none;
+}
+
+
+#dissipateLogo
+{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+#passwordInfo
+{
+	position: absolute;
+	left: 30px;
+	top: 60px;
+    width: 340px;
+    font-family: Helvetica, Arial;
+    font-size: 8pt;
+}
+
+#versionInfo
+{
+	position: absolute;
+	left: 363px;
+	top: 33px;
+    font-family: Helvetica, Arial;
+    font-size: 8pt;
+    color: #fff;
+}
+
+#dissipateLink a
+{
+	position: absolute;
+	left: 287px;
+	top: 17px;
+    font-family: Palatino, Georgia, Serif;
+    font-size: 11pt;
+    color: #fff;
+}
+
+#activationMessage
+{
+	position: absolute;
+	left: 30px;
+	top: 262px;
+    font-family: Helvetica, Arial;
+    font-size: 8pt;
+    color: #999;
+    width: 230px;
+}

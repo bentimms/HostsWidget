@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type='text/javascript' src='Hosts.js'></script>
+<script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleInfoButton.js' charset='utf-8' />
+<script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleAnimator.js' charset='utf-8' />
+<script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleButton.js' charset='utf-8' />
+<style>
+	@import "Hosts.css";
+</style>
+
+</head>
+
+
+<body onload="firstLoad();">
+    <div id="front">
+		<img src="Default.png">
+        <div id="dissipateLink"><a href="javascript: widget.openURL('http://www.dissipate.co.uk/hostswidget/')">dissipate.co.uk</a></div>
+		<div id="versionInfo">v1.2</div>
+        <div class="hostsContainer">
+        <table id="hostsTable" class="hostsTable">
+        </table>
+        </div>
+		<div id="frontSpinner"><img src="img/frontspin.gif"/></div>
+		<div id="activateButton"></div>
+        <div id="activationMessage">Activating changes will require you to enter your password to flush the DNS cache.</div>
+  </div>  
+</body>
+
+</html>
