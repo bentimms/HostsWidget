@@ -13,4 +13,4 @@ Install in the same way that Dashboard Widgets normally are installed: double-cl
 Compatibility
 ---------------------
 
-Works in Leopard and Snowleopard, using an Applescript to the things that need admin privileges (i.e. flushing the DNS cache).  There's a problem in Lion that the prompt to enter your account credentials appears on your main desktop and not on the Dashboard screen.
+Works in Leopard and Snow Leopard, using an Applescript to the things that need admin privileges (i.e. flushing the DNS cache).  There's a problem in Lion that the prompt to enter your account credentials appears on your main desktop and not on the Dashboard screen. (This is rectified by unticking "Show Dashboard as a space" in the Mission Control section of the System Preferences.
